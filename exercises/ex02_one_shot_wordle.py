@@ -1,4 +1,4 @@
-"""One shot wordle"""
+"""One shot wordle."""
 
 __author__ = "730597174"
 
@@ -19,8 +19,6 @@ storage_for_emoji: str = ""
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-
-
 
 while counter < len(secret_word): 
     if guess[counter] == secret_word[counter]:
