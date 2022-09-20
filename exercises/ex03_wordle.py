@@ -52,10 +52,11 @@ def main() -> None:
         guess: str = input_guess(len(secret_word))
         print(emojified(guess, secret_word))
         if guess == secret_word:
-            correct == True 
-            return f"You won in {counter + 1}/6 turns!"
+            correct = True 
+            print(f"You won in {counter + 1}/6 turns!")
         else: 
             counter += 1
-    print("X/6 - Sorry, try again tomorrow!")
+    if counter == 6 and guess != secret_word:
+        print("X/6 - Sorry, try again tomorrow!")
     if __name__ == "__main__":
         main()
