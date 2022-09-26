@@ -3,7 +3,9 @@
 __author__ = "730597174"
 
 # Part 1. Contains_char
-def contains_char(s: str, g: str) -> bool: 
+
+
+def contains_char(s: str, g: str) -> bool:
     """Matching the index of the guess word to secret."""
     assert len(g) == 1 
     counter: int = 0
@@ -14,8 +16,11 @@ def contains_char(s: str, g: str) -> bool:
             counter += 1
     return False 
 
+
 # Part 2. emojified
-def emojified(guess: str, secret: str) -> str: 
+
+
+def emojified(guess: str, secret: str) -> str:
     """Matching the right color box."""
     assert len(guess) == len(secret)
     storage_for_emoji: str = ""
@@ -33,7 +38,9 @@ def emojified(guess: str, secret: str) -> str:
         counter += 1
     return storage_for_emoji
 
-# Part 3. Input guess 
+# Part 3. Input guess
+
+
 def input_guess(a: int) -> str:
     """Input a word with the correct length as the secret word."""
     guess: str = input(f"Enter a {a} character word: ")
@@ -42,12 +49,14 @@ def input_guess(a: int) -> str:
     return guess
 
 # Part 4. Main
+
+
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     secret_word: str = "codes"
     counter: int = 0
     correct: bool = False
-    while counter < 6 and correct == False: 
+    while counter < 6 and correct == False:
         print(f"=== Turn {counter + 1}/6 ===")
         guess: str = input_guess(len(secret_word))
         print(emojified(guess, secret_word))
