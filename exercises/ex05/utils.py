@@ -1,4 +1,4 @@
-"""Continue practicing with list and utility functions."""
+"""Continue practicing with list and unit test."""
 
 __author__ = "730597174"
 
