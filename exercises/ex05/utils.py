@@ -19,7 +19,7 @@ def only_evens(a: list[int]) -> int:
 
 
 def concat(b: list[int], c: list[int]) -> int: 
-    """A function that add two lists. """
+    """A function that add two lists."""
     i: int = 0
     tracker: list[int] = list()
     while i < len(b): 

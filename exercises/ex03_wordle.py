@@ -67,5 +67,6 @@ def main() -> None:
             counter += 1
     if counter == 6 and guess != secret_word:
         print("X/6 - Sorry, try again tomorrow!")
-    if __name__ == "__main__":
-        main()
+
+if __name__ == "__main__":
+    main()
