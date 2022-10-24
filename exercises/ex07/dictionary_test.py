@@ -2,7 +2,7 @@
 
 __author__ = "730597174"
 
-from turtle import color
+
 from exercises.ex07.dictionary import invert, favorite_color, count
 
 

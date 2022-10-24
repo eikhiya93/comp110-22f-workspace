@@ -8,8 +8,8 @@ def invert(a: dict[str, str]) -> dict[str, str]:
     dictionary: dict[str, str] = {}
     for key in a:
         value: str = a[key] 
-        if value in dictionary > 1:
-            raise KeyError ("Key cannot repeat")
+        if value in dictionary:
+            raise KeyError("Key cannot repeat")
         dictionary[value] = key    
     return dictionary 
 
